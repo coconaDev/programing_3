@@ -1,0 +1,113 @@
+PC201334% ipython
+Python 3.8.10 (default, Mar 15 2022, 12:22:08)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.2.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: # 算術演算
+
+In [2]: 2022 + 521
+Out[2]: 2543
+
+In [3]: 2022 - 521
+Out[3]: 1501
+
+In [4]: 2022 * 521
+Out[4]: 1053462
+
+In [5]: 2022 / 521
+Out[5]: 3.8809980806142033
+
+In [6]: 2022 % 521
+Out[6]: 459
+
+In [7]: # 比較演算
+
+In [8]: 2022 > 2021
+Out[8]: True
+
+In [9]: 2022 >= 2021
+Out[9]: True
+
+In [10]: 2022 < 2021
+Out[10]: False
+
+In [11]: 2022 <= 2021
+Out[11]: False
+
+In [12]: 2022 == 2021
+Out[12]: False
+
+In [13]: 2022 != 2021
+Out[13]: True
+
+In [14]: # ビット演算
+
+In [15]: 2022 | 2021
+Out[15]: 2023
+
+In [16]: 2022 & 2021
+Out[16]: 2020
+
+In [17]: !2022
+zsh:1: command not found: 2022
+
+In [18]: 2022 || 2021
+  Input In [18]
+    2022 || 2021
+          ^
+SyntaxError: invalid syntax
+
+
+In [19]: 2022 && 2021
+  Input In [19]
+    2022 && 2021
+          ^
+SyntaxError: invalid syntax
+
+
+In [20]: # シフト演算
+
+In [21]: 16 << 2
+Out[21]: 64
+
+In [22]: 16 >> 2
+Out[22]: 4
+
+In [23]: # 累乗
+
+In [24]: 2 ** 10
+Out[24]: 1024
+
+In [25]: 1000 * (1/3)
+Out[25]: 333.3333333333333
+
+In [26]: # print関数
+
+In [27]: print("Hello, Media")
+Hello, Media
+
+In [28]: print('Hello, Info\n')
+Hello, Info
+
+
+In [29]: printf('%d\n', 10)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [29], in <cell line: 1>()
+----> 1 printf('%d\n', 10)
+
+NameError: name 'printf' is not defined
+
+In [30]: rint('%d', 10)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [30], in <cell line: 1>()
+----> 1 rint('%d', 10)
+
+NameError: name 'rint' is not defined
+
+In [31]: print('%d', 10)
+%d 10
+
+In [32]: print('%d'%10)
+10
