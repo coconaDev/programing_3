@@ -1,0 +1,107 @@
+In [1]: type(10)
+Out[1]: int
+
+In [2]: type(0.5)
+Out[2]: float
+
+In [3]: type('こんにちは')
+Out[3]: str
+
+In [4]: type(True)
+Out[4]: bool
+
+In [5]: a = 10
+
+In [6]: type(a)
+Out[6]: int
+
+In [7]: b = 'こんにちは'
+
+In [8]: type(b)
+Out[8]: str
+
+In [9]: a = 7
+
+In [10]: b = 10
+
+In [11]: a += b
+
+In [12]: a
+Out[12]: 17
+
+In [13]: a -= b
+
+In [14]: a
+Out[14]: 7
+
+In [15]: a *= b
+
+In [16]: a
+Out[16]: 70
+
+In [17]: a /= b
+
+In [18]: a
+Out[18]: 7.0
+
+In [19]: a %= b
+
+In [20]: a
+Out[20]: 7.0
+
+In [21]: a //= b
+
+In [22]: a
+Out[22]: 0.0
+
+In [23]: a ** = b
+  Input In [23]
+    a ** = b
+         ^
+SyntaxError: invalid syntax
+
+
+In [24]: a ++
+  Input In [24]
+    a ++
+        ^
+SyntaxError: invalid syntax
+
+
+In [25]: a-
+  Input In [25]
+    a-
+      ^
+SyntaxError: invalid syntax
+
+
+In [26]: type(0)
+Out[26]: int
+
+In [27]: type(0.0)
+Out[27]: float
+
+In [28]: type(3+2)
+Out[28]: int
+
+In [29]: type(3-2)
+Out[29]: int
+
+In [30]: type(3*2)
+Out[30]: int
+
+In [31]: type(3/2)
+Out[31]: float
+
+In [32]: type(4/2)
+Out[32]: float
+
+In [33]: a = float(100)
+
+In [34]: type(a)
+Out[34]: float
+
+In [35]: a = int(9.6)
+
+In [36]: type(a)
+Out[36]: int

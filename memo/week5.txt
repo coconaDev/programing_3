@@ -1,0 +1,142 @@
+In [1]: a = 2 + 3j
+
+In [2]: a
+Out[2]: (2+3j)
+
+In [3]: b = 3 +5j
+
+In [4]: b
+Out[4]: (3+5j)
+
+In [5]: a.real
+Out[5]: 2.0
+
+In [6]: b.img
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Input In [6], in <cell line: 1>()
+----> 1 b.img
+
+AttributeError: 'complex' object has no attribute 'img'
+
+In [7]: b.imag
+Out[7]: 5.0
+
+In [8]: a + b
+Out[8]: (5+8j)
+
+In [9]: a - b
+Out[9]: (-1-2j)
+
+In [10]: a * b
+Out[10]: (-9+19j)
+
+In [11]: 3.14e-4
+Out[11]: 0.000314
+
+In [12]: 3.14e4
+Out[12]: 31400.0
+
+In [13]: 'nit'+'ok'
+Out[13]: 'nitok'
+
+In [14]: 'ok'*3
+Out[14]: 'okokok'
+
+In [15]: a = 'nit'
+
+In [16]: a 'ok'
+  Input In [16]
+    a 'ok'
+      ^
+SyntaxError: invalid syntax
+
+
+In [17]: a'ok'
+  Input In [17]
+    a'ok'
+     ^
+SyntaxError: invalid syntax
+
+
+In [18]: 100 + "年"
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [18], in <cell line: 1>()
+----> 1 100 + "年"
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+In [19]: str(100)+ "年"
+Out[19]: '100年'
+
+In [20]: price = 100
+
+In [21]: print(str(price) + "円"
+    ...: )
+100円
+
+In [22]: s = '%03d円' % 100
+
+In [23]: print(s)
+100円
+
+In [24]: s='nitokmi'
+
+In [25]: s[3]
+Out[25]: 'o'
+
+In [26]: s[-3]
+Out[26]: 'k'
+
+In [27]: s[3:5]
+Out[27]: 'ok'
+
+In [28]: s[:3]
+Out[28]: 'nit'
+
+In [29]: s[-2]
+Out[29]: 'm'
+
+In [30]: s[:-2]
+Out[30]: 'nitok'
+
+In [31]: s[3:]
+Out[31]: 'okmi'
+
+In [32]: s[-4:]
+Out[32]: 'okmi'
+
+In [33]: s[4]='c'
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [33], in <cell line: 1>()
+----> 1 s[4]='c'
+
+TypeError: 'str' object does not support item assignment
+
+In [34]: len(s)
+Out[34]: 7
+
+In [35]: s=[1,1,2,3,5]
+
+In [36]: s[3]
+Out[36]: 3
+
+In [37]: s[2:]
+Out[37]: [2, 3, 5]
+
+In [38]: s[1:3]
+Out[38]: [1, 2]
+
+In [39]: s[-4]
+Out[39]: 1
+
+In [40]: s[-2:]
+Out[40]: [3, 5]
+
+In [41]: s[-2:1]
+Out[41]: []
+
+In [42]: len(s)
+Out[42]: 5
