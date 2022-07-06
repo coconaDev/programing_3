@@ -1,0 +1,134 @@
+In [1]: a=3
+
+In [2]: id(3)
+Out[2]: 139872206291248
+
+In [3]: id(a)
+Out[3]: 139872206291248
+
+In [4]: b=5
+
+In [5]: id(b)
+Out[5]: 139872206291312
+
+In [6]: a='Hello'
+
+In [7]: id(a)
+Out[7]: 139872156020272
+
+In [8]: a=2
+
+In [9]: b=a
+
+In [10]: print(a)
+2
+
+In [11]: print(b)
+2
+
+In [12]: id(a)
+Out[12]: 139872206291216
+
+In [13]: id(b)
+Out[13]: 139872206291216
+
+In [14]: a=10
+
+In [15]: b=10
+
+In [16]: c=5
+
+In [17]: print(a==b)
+True
+
+In [18]: print(a==c)
+False
+
+In [19]: a=[1,2,4]
+
+In [20]: b=[1,2]
+
+In [21]: b=[1,2,4]
+
+In [22]: print(a==b)
+True
+
+In [23]: print(a is b)
+False
+
+In [24]: b=a
+
+In [25]: print(a==b)
+True
+
+In [26]: print(a is b)
+True
+
+In [27]: a[0]=99
+
+In [28]: print(b)
+[99, 2, 4]
+
+
+-------------------------------------------------
+
+In [29]: 'Hello,Python'.count('o')
+Out[29]: 2
+
+In [30]: 'オブジェクト指向'.count('オブジェ')
+Out[30]: 1
+
+In [31]: s1='Hello,Python'
+
+In [32]: s1.count(o)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-32-e04994d00106> in <module>
+----> 1 s1.count(o)
+
+NameError: name 'o' is not defined
+
+In [33]: s2='オブジェクト指向'
+
+In [34]: s2.count('オブジェ')
+Out[34]: 1
+
+In [35]: 'PYTHON'.lower()
+Out[35]: 'python'
+
+In [36]: s1='PYTHON'
+
+In [37]: s1.lower()
+Out[37]: 'python'
+
+In [38]: 'PYTHON'.upper()
+Out[38]: 'PYTHON'
+
+In [39]: s2=s1.'PYTHON'
+  File "<ipython-input-39-892045bf5506>", line 1
+    s2=s1.'PYTHON'
+          ^
+SyntaxError: invalid syntax
+
+
+In [40]: print(s2)
+オブジェクト指向
+
+-----------------------------------------------------------------------------
+
+In [41]: import math
+
+In [42]: '円周率は{}'.format(math.pi)
+Out[42]: '円周率は3.141592653589793'
+
+In [43]: '{:,}円'.format(1200)
+Out[43]: '1,200円'
+
+In [44]: '{:,}円'.format(1000000)
+Out[44]: '1,000,000円'
+
+In [45]: '{:>5}'.format(99)
+Out[45]: '   99'
+
+In [46]: '{:>5}'.format(999)
+Out[46]: '  999'
