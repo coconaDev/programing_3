@@ -1,0 +1,128 @@
+In [1]: fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+
+In [2]: fruits.count('apple')
+Out[2]: 2
+
+In [3]: fruits.count('tangerine')
+Out[3]: 0
+
+In [4]: fruits.pop('banana')
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [4], in <cell line: 1>()
+----> 1 fruits.pop('banana')
+
+TypeError: 'str' object cannot be interpreted as an integer
+
+In [5]: fruits.index('banana')
+Out[5]: 3
+
+In [6]: fruits.index('banana'[,3[]])
+  Input In [6]
+    fruits.index('banana'[,3[]])
+                          ^
+SyntaxError: invalid syntax
+
+
+In [7]: fruits.index('banana'[, 3[, ]])
+  Input In [7]
+    fruits.index('banana'[, 3[, ]])
+                          ^
+SyntaxError: invalid syntax
+
+
+In [8]: fruits.index('banana'[5:])
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Input In [8], in <cell line: 1>()
+----> 1 fruits.index('banana'[5:])
+
+ValueError: 'a' is not in list
+
+In [9]: fruits.index('banana',4)
+Out[9]: 6
+
+In [10]: fruits.reverse()
+
+In [11]: fruits
+Out[11]: ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
+
+In [12]: fruits.append('grape')
+
+In [13]: fruits
+Out[13]: ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
+
+In [14]: fruits.sorted()
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Input In [14], in <cell line: 1>()
+----> 1 fruits.sorted()
+
+AttributeError: 'list' object has no attribute 'sorted'
+
+In [15]: fruits.sort()
+
+In [16]: fruits
+Out[16]: ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
+
+In [17]: fruits[-1]
+Out[17]: 'pear'
+
+In [18]: fruits()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [18], in <cell line: 1>()
+----> 1 fruits()
+
+TypeError: 'list' object is not callable
+
+In [19]: clear(fruits)
+zsh:1: invalid mode specification
+
+In [20]: fruits.clear()
+
+In [21]: fruits()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [21], in <cell line: 1>()
+----> 1 fruits()
+
+TypeError: 'list' object is not callable
+
+In [22]: fruits.remove()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [22], in <cell line: 1>()
+----> 1 fruits.remove()
+
+TypeError: list.remove() takes exactly one argument (0 given)
+
+In [23]: del fruits
+
+In [24]: fruits()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [24], in <cell line: 1>()
+----> 1 fruits()
+
+NameError: name 'fruits' is not defined
+
+In [25]: fruits=()
+
+In [26]: fruits
+Out[26]: ()
+
+In [27]: fruits=('orange')
+
+In [28]: fruits
+Out[28]: 'orange'
+
+In [29]: fruits=('orange', 'apple', 'pear','banana', 'kiwi', 'apple', 'banana')
+
+In [30]: fruits
+Out[30]: ('orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana')
+
+In [31]: fruits=(['orange', 'apple'],('pear', 'banana', 'kiwi'),('apple','banana'))
+
+In [32]: fruits
+Out[32]: (['orange', 'apple'], ('pear', 'banana', 'kiwi'), ('apple', 'banana'))
