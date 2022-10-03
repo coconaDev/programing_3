@@ -1,0 +1,29 @@
+def get_triagle_area(base, height):
+	return base * height / 2
+print(get_triangle_area(10.0, 3.0))
+
+def print_hello(count):
+	for i in range(0, count):
+		print('Hello')
+print_hello(count)
+
+def get_rectangle_area(width, height):
+	return width * height
+print(get_rectangle_area(10, 5))
+
+def get_message(name='名無し'):
+	return f'こんにちは{name}さん'
+print(get_message())
+print(get_message('山田'))
+
+def get_absolute_value(value):
+	if value < 0:
+		return -value
+	return value
+print(get_absolute_value(5.2))
+print(get_absolute_value(-3.3))
+
+
+def get_tail(*args):
+	return args[-1]
+print(get_tail(3, 5, 9, 2))

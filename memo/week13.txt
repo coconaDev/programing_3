@@ -1,0 +1,95 @@
+
+In [1]: 学科名={'ms':'機械システム工学科', 'ic':'情報通信システム工学科', 'mi':'メディア情
+   ...:  報工学科', 'br':'生物資源工学科'}
+
+In [2]: for k in 学科名.keys():
+   ...:     print(k)
+   ...:
+ms
+ic
+mi
+br
+
+In [3]: for k in 学科名.values():
+   ...:     print(k)
+   ...:
+機械システム工学科
+情報通信システム工学科
+メディア情 報工学科
+生物資源工学科
+
+In [4]: 学科名={'':'総合科学科'}
+
+In [5]: print(学科名)
+{'': '総合科学科'}
+
+In [6]: 学科名={'ms':'機械システム工学科', 'ic':'情報通信システム工学科', 'mi':'メディア情
+   ...:  報工学科', 'br':'生物資源工学科'}
+
+In [7]: 学科名[5]="総合科学科"
+
+In [8]: print(学科名)
+{'ms': '機械システム工学科', 'ic': '情報通信システム工学科', 'mi': 'メディア情 報工学科', 'br': '生物資源工学科', 5: '総合科学科'}
+
+In [9]: mi = set('Department of Media Information Engineering')
+
+In [10]: print(mi)
+{'i', 'm', 'f', 'I', 'E', 'g', 'n', 't', 'M', 'd', 'D', 'p', 'e', 'o', 'a', ' ', 'r'}
+
+In [11]: mi = {'Department of Media Information Engineering'}
+
+In [12]: print(mi)
+{'Department of Media Information Engineering'}
+
+In [13]: mi = {Department of Media Information Engineering}
+  Input In [13]
+    mi = {Department of Media Information Engineering}
+          ^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+
+In [14]: ic = {'Information and Communication Systems Engineering')
+  Input In [14]
+    ic = {'Information and Communication Systems Engineering')
+                                                             ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'
+
+
+In [15]: ic = {'Information and Communication Systems Engineering'}
+
+In [16]: print(ic)
+{'Information and Communication Systems Engineering'}
+
+In [17]: mi - ic
+Out[17]: {'Department of Media Information Engineering'}
+
+In [18]: ic - mi
+Out[18]: {'Information and Communication Systems Engineering'}
+
+In [19]: mi & ic
+Out[19]: set()
+
+In [20]: mi^ic
+Out[20]:
+{'Department of Media Information Engineering',
+ 'Information and Communication Systems Engineering'}
+
+In [21]: del(mi)
+
+In [22]: print(mi)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [22], in <cell line: 1>()
+----> 1 print(mi)
+
+NameError: name 'mi' is not defined
+
+In [23]: del(ic)
+
+In [24]: print(ic)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Input In [24], in <cell line: 1>()
+----> 1 print(ic)
+
+NameError: name 'ic' is not defined

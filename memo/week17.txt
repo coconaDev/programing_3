@@ -1,0 +1,76 @@
+# 2
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+a = Person("高橋太郎", 19)
+b = Person("小林花子", 18)
+
+
+# 2-1
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def print_info(p):
+        print("名前", p.name)
+        print("年齢", p.age)
+
+a = Person("高橋太郎", 19)
+b = Person("小林花子", 18)
+
+print_info(a)
+
+# 2-2
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def age_check(p, i):
+        return p > i
+
+a = Person("高橋太郎", 19)
+b = Person("小林花子", 18)
+
+print(age_check(a, 20))
+
+# 2-3
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def print_younger_person_name(p1, p2):
+        return p1 if p1>=p2 else p2
+
+a = Person("高橋太郎", 19)
+b = Person("小林花子", 18)
+
+print(print_younger_person_name(a, b))
+
+# 2-4
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def get_total_age(p1, p2):
+        return p1.age + p2.age
+
+a = Person("高橋太郎", 19)
+b = Person("小林花子", 18)
+
+print(get_total_age(a, b))
+
+# 3
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def get_area:
+        return self.width * self.height
+rec0 = Rectangle(5, 8)
+rec1 = Rectangle(4, 6)
+
+print('rec0の面積', rec0.get_area())
+print('rec1の面積', rec1.get_area())
