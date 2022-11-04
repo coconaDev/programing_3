@@ -10,7 +10,7 @@ while True:
     month = int(a.group(2))
     day = int(a.group(3))
 
-    if :
-        print("")
+    if 1989<=year|| month <= 12 || day <= 31:
+        print(f"西暦{year}年{month}月{day}日です")
     else:
         print("日付ではありません")
