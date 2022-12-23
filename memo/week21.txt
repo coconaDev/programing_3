@@ -1,0 +1,6 @@
+プログラミング3_グラフの作成.pdf
+8
+plt.savefig("fig.svg")
+
+10
+plt.plot(x,y,'o')
