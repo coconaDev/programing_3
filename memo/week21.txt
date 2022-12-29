@@ -4,3 +4,8 @@ plt.savefig("fig.svg")
 
 10
 plt.plot(x,y,'o')
+
+Webアプリケーション開発
+Contetnt-Type
+chmod 755 /cgi-bin/${dir}
+#!/usr/bin/env python3
