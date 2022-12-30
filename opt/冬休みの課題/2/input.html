@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>データ入力</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    </head>
+    <body>
+        <form method="get" action="cgi-bin/input.py">
+            <p>名前は？<input type="text" name="name" /></p>
+            <p>年齢は？<input type="text" name="age" /></p>
+            <p>学科は？<br>
+                ・<input type="radio" name="class" value="機械システム工学科" /> 機械システム工学科<br>
+                ・<input type="radio" name="class" value="情報通信システム工学科" /> 情報通信システム工学科<br>
+                ・<input type="radio" name="class" value="メディア情報システム工学科" /> メディア情報システム工学科<br>
+                ・<input type="radio" name="class" value="生物資源工学科" /> 生物資源工学科
+
+            </p>
+            <p><input type="submit" value="送信" /></p>
+        </form>
+    </body>
+</html>
