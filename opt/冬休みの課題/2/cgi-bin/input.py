@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 import sys, io, cgi
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 

@@ -63,4 +63,4 @@ def ex6():
         print(ans[i])
 
     return 0
-ex6()
+ex5()
