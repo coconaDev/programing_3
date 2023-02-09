@@ -32,4 +32,4 @@ for i in range(0,132):
             temp[j-1] = elements.select('td')[j].text
 
     temps.setdefault(elements.select('a')[0].text,[]).append(temp)
-print(temps)
+print(tems)
